@@ -1,0 +1,121 @@
+
+:root{
+    --dark-page-bg:#111111;
+    --dark-header-bg:#232323;
+    --light-page-bg:hsl(0, 100%, 100%);
+    --light-header-bg:hsl(0, 0%, 54%);
+     font-family: Arial, Helvetica, sans-serif;
+     
+}
+
+body{
+    font-size: 62.5%;
+    font-family: 'Liu Jian Mao Cao', cursive;
+    padding: 0;
+    margin: 0;
+
+}
+
+.logo{
+    background: gray;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-left:1rem;
+}
+
+.button{
+    margin: 1.5rem;
+    width: 3rem;
+    padding: .3rem;
+    border-radius: 4rem;
+    background: gray;
+    transition: .09s;
+    
+}
+
+.switch{
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background: white;
+    transition: .09s;
+}
+     
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 5rem;
+    
+    
+}
+
+main{
+    
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+
+
+}
+
+.tester{
+    width: 19rem;
+    height: 19rem;
+    background: gray;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    
+}
+
+
+.dark{
+    background: var(--dark-page-bg);
+}
+
+
+body.light main{
+    background: var(--light-page-bg);
+}
+
+body.dark main{
+    background: var(--dark-page-bg);
+}
+
+.dark .switch{
+    margin-left: 1.8rem;
+    
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+
+}
+
+nav ul li{
+    width: 7rem;
+    margin-right: 5rem;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--light-header-bg);
+    font-size: 2.5rem;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: gray;
+    font-size: 2rem;
+}
+
